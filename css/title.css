@@ -1,0 +1,18 @@
+body{
+    background-size: cover;
+    background-image: url('../image/Haikei.png');
+    height: auto;
+}
+
+#random-match, #room-match{
+    position: absolute;
+    top: 500px;
+}
+
+#random-match{
+    left: 20%;
+}
+
+#room-match{
+    right: 20%;
+}
