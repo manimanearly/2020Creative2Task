@@ -1,10 +1,12 @@
 <?php
-    require_once('common.php');
+    
+require_once('common.php');
+$id = mt_rand(100000, 999999);
+
+while(getDB('select count(playerID=? or null) as num from user', $id)['num'] <= 0){
     $id = mt_rand(100000, 999999);
+}
 
-    if(getDB('insert into user(playerID) value(?)', $id)[1] <= 0){
-        $id = mt_rand(100000, 999999);
-    }
-
+getDB('insert into user(playerID) value(?)', $id);
 
 ?>
