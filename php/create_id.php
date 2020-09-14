@@ -9,4 +9,8 @@ while(getDB('select count(playerID=? or null) as num from user', [$id])['num'] >
 
 getDB('insert into user(playerID) value(?)', [$id]);
 
+echo json_encode([
+    'user_id' => $id
+]);
+
 ?>
