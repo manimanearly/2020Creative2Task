@@ -15,7 +15,7 @@ function update(){
     }
 
     if(next){
-        // Go to play scene.
+        location.href = "../html/gameroom.html?user=" + user_id;
     }
 }
 
