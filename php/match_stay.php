@@ -3,9 +3,9 @@
 require_once('common.php');
 $user = $_GET['id'];
 $result = false;
-$data = getDB('select player2 from matchroom where player1=?',[$user]);
+$data = getDB('select * from matchroom where player1=?',[$user]);
 
-if($data != null) {
+if($data['player2'] != null) {
     $result = true;
 }
 
