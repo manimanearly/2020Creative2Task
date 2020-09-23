@@ -12,11 +12,10 @@ function update(){
         })
         .then((json)=>{
             next = json['result'];
-            if(json['result']){
+            if(json['result'] == true){
                 fetch("../php/create_playroom.php?room_id=" + room_id + "&player_id=" + user_id);
             }
         });
-
     }
 
     if(next){
@@ -25,8 +24,9 @@ function update(){
             return res.json();
         })
         .then((json)=>{
-            if(json['room_id'] != false)
+            if(json['room_id'] != null){
                 location.href = "../html/gameroom.html?user=" + user_id + "&room_id=" + json['room_id'];
+            }
         });
     }
 }

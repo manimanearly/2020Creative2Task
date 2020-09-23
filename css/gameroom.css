@@ -3,3 +3,58 @@ body{
     background-image: url('../image/Haikei.png');
     height: auto;
 }
+
+#box1, #box1_choice, #box1_ui,
+#box2, #box2_choice, #box2_ui,
+#box3, #box3_choice, #box3_ui,
+#box4, #box4_choice, #box4_ui,
+#box5, #box5_choice, #box5_ui,
+#box6, #box6_choice, #box6_ui,
+#box7, #box7_choice, #box7_ui,
+#box8, #box8_choice, #box8_ui,
+#box9, #box9_choice, #box9_ui{
+    position: absolute;
+    width: 200px;
+    height: 209px;
+}
+
+#box1, #box1_choice, #box1_ui {
+    top: 130px;
+    left: 545px;
+}
+#box2, #box2_choice, #box2_ui {
+    top: 130px;
+    left: 845px;
+}
+#box3, #box3_choice, #box3_ui {
+    top: 130px;
+    left: 1145px;
+}
+#box4, #box4_choice, #box4_ui {
+    top: 340px;
+    left: 545px;
+}
+#box5, #box5_choice, #box5_ui {
+    top: 340px;
+    left: 845px;
+}
+#box6, #box6_choice, #box6_ui {
+    top: 340px;
+    left: 1145px;
+}
+#box7, #box7_choice, #box7_ui {
+    top: 550px;
+    left: 545px;
+}
+#box8, #box8_choice, #box8_ui {
+    top: 550px;
+    left: 845px;
+}
+#box9, #box9_choice, #box9_ui {
+    top: 550px;
+    left: 1145px;
+}
+
+#box1_choice, #box2_choice, #box3_choice, #box4_choice, #box5_choice, #box6_choice, #box7_choice, #box8_choice, #box9_choice {
+    visibility: hidden;
+} 
