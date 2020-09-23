@@ -1,5 +1,8 @@
 setInterval("update()", 1000);
 
+var stay_ui = document.getElementById("matching-ui");
+var fade_ui = document.getElementById("fade");
+
 var next = false;
 var room_id = -1;
 var user_id = 0;
@@ -52,4 +55,6 @@ function room_match(id){
         next = (json['num'] == "player2");
         room_id = json['roomid'];
     });
+    fade_ui.style.visibility = "visible";
+    stay_ui.style.visibility = "visible";
 }

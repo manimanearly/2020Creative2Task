@@ -1,12 +1,14 @@
 body{
+    margin: 0 0 0 0 ;
     background-size: cover;
     background-image: url('../image/Haikei.png');
-    height: auto;
+    overflow: hidden;
+    width: 100vw;
 }
 
 #random-match, #room-match{
     position: absolute;
-    top: 500px;
+    top: 50%;
 }
 
 #random-match{
@@ -14,5 +16,27 @@ body{
 }
 
 #room-match{
+    visibility: hidden;
     right: 20%;
+}
+
+#fade{
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: auto;
+}
+
+#matching{
+    width: 100%;
+    text-align: center;
+}
+
+#matching-ui{
+    position: relative;
+    z-index: 20;
+    top: 20vw;
+}
+#fade, #matching-ui{
+    visibility: hidden;
 }
