@@ -1,6 +1,8 @@
 body{
+    margin: 0;
     background-size: cover;
     background-image: url('../image/Haikei.png');
+    overflow: hidden;
     height: auto;
 }
 
@@ -15,46 +17,88 @@ body{
 #box9, #box9_choice, #box9_ui{
     position: absolute;
     width: 200px;
-    height: 209px;
+    height: auto;
 }
 
 #box1_ui {
-    top: 130px;
+    top: 200px;
     left: 545px;
 }
 #box2_ui {
-    top: 130px;
+    top: 200px;
     left: 845px;
 }
 #box3_ui {
-    top: 130px;
+    top: 200px;
     left: 1145px;
 }
 #box4_ui {
-    top: 340px;
+    top: 400px;
     left: 545px;
 }
 #box5_ui {
-    top: 340px;
+    top: 400px;
     left: 845px;
 }
 #box6_ui {
-    top: 340px;
+    top: 400px;
     left: 1145px;
 }
 #box7_ui {
-    top: 550px;
+    top: 600px;
     left: 545px;
 }
 #box8_ui {
-    top: 550px;
+    top: 600px;
     left: 845px;
 }
 #box9_ui {
-    top: 550px;
+    top: 600px;
     left: 1145px;
 }
 
 #box1_choice, #box2_choice, #box3_choice, #box4_choice, #box5_choice, #box6_choice, #box7_choice, #box8_choice, #box9_choice {
     visibility: hidden;
 } 
+
+#turn_player, #turn_text{
+    position: absolute;
+    top: 1vw;
+    visibility: hidden;
+}
+#turn_player{
+    right: 48.2%;
+}
+#turn_text{
+    left: 51.8%;
+}
+
+#fade{
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: auto;
+}
+
+#etc, #s_or_h, #return_title{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    text-align: center;
+}
+#text_ui{
+    position: relative;
+    z-index: 20;
+    top: 15vw;
+}
+#search_or_hide{
+    position: relative;
+    visibility: hidden;
+    top: 5vw;
+}
+#return_title_button{
+    z-index: 20;
+    position: relative;
+    visibility: hidden;
+    top: 25vw;
+}

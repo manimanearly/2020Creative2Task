@@ -36,6 +36,9 @@ function update(){
 
 // ユーザー作成
 function create_user(){
+    if(user_id != 0){
+        return;
+    }
     fetch("../php/create_id.php")
     .then((res)=>{
         return res.json();
